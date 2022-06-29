@@ -48,6 +48,10 @@ from twilio.rest import Client
 from flask import Flask, jsonify
 app = Flask (__name__)
 
+@app.route("/")
+def home():
+    return "Welcome to my Flask App for Twilio Voice and Messaging SDKs."
+
 @app.route('/call')
 def twilioMakeCall():
     account_sid = "ACa04a1cf087c83f08afc6577b475144f6"
