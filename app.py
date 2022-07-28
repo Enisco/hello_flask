@@ -126,10 +126,6 @@ from agora_token_builder import RtcTokenBuilder
 from flask import Flask, jsonify
 app = Flask(__name__)
 
-from dotenv import load_dotenv
-load_dotenv()
-
-
 Role_Attendee = 0 # depreated, same as publisher
 Role_Publisher = 1 # for live broadcaster
 Role_Subscriber = 2 # default, for live audience
